@@ -13,7 +13,7 @@ class UpdatePerson extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -24,7 +24,9 @@ class UpdatePerson extends FormRequest
     public function rules()
     {
         return [
-            //
+            'name' => 'max:255',
+            'height' => 'numeric|min:0.1',
+            'weight' => 'numeric|min:0.1',
         ];
     }
 }
