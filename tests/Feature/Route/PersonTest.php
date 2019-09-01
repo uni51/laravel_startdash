@@ -111,5 +111,4 @@ class PersonTest extends TestCase
         $response = $this->json('DELETE','api/person/1');
         $response->assertStatus(200);
     }
-
 }
