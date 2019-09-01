@@ -2,6 +2,7 @@
 
 namespace App\Http\Resources;
 
+use App\Services\BmiService;
 use Illuminate\Http\Resources\Json\ResourceCollection;
 
 class PersonCollection extends ResourceCollection
